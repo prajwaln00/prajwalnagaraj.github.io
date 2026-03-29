@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prajwal Nagaraj | FPGA Engineer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+body { font-family: 'Segoe UI', sans-serif; background:#020617; color:#e2e8f0; }
+.hero { padding:120px 20px; text-align:center; background:linear-gradient(135deg,#0f172a,#020617); }
+.hero h1 { font-size:3.5rem; font-weight:bold; }
+.hero p { font-size:1.3rem; color:#94a3b8; }
+.section { padding:70px 20px; }
+.card { background:#0f172a; border:none; border-radius:15px; transition:0.3s; }
+.card:hover { transform:translateY(-8px) scale(1.02); box-shadow:0 20px 40px rgba(0,0,0,0.5); }
+.btn-custom { background:#3b82f6; color:white; border-radius:30px; padding:10px 25px; }
+.skill-bar { background:#1e293b; border-radius:20px; overflow:hidden; margin-bottom:15px; }
+.skill-fill { height:10px; background:#3b82f6; width:0; }
+a { color:#60a5fa; text-decoration:none; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <h1 id="title">Prajwal Nagaraj</h1>
+    <p>FPGA | Analog IC Design | Embedded Systems</p>
+    <a href="#projects" class="btn btn-custom mt-3">Explore My Work</a>
+</div>
+
+<div class="section container">
+    <h2>About Me</h2>
+    <p>I am an MSc Advanced Electrical & Electronics Engineering graduate from Queen Mary University of London with strong expertise in FPGA design, analog IC design, and embedded systems. I specialize in designing high-performance and power-efficient systems with a strong focus on real-world engineering applications.</p>
+</div>
+
+<div class="section container">
+    <h2>Technical Skills</h2>
+
+    <p>FPGA / Verilog</p>
+    <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+
+    <p>Analog Design (Cadence)</p>
+    <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+
+    <p>Embedded Systems</p>
+    <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+
+    <p>Python / MATLAB</p>
+    <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+</div>
+
+<div id="projects" class="section container">
+    <h2>Projects</h2>
+
+    <div class="card p-4 mb-4">
+        <h4>OTA & Bandgap Reference (90nm)</h4>
+        <p><b>What I did:</b> Designed CMOS OTA and bandgap reference using Cadence Virtuoso.</p>
+        <p><b>Key Skills:</b> Analog Design, Noise Optimization, Power Analysis</p>
+        <p><b>Impact:</b> Achieved optimized gain-bandwidth and power efficiency.</p>
+    </div>
+
+    <div class="card p-4 mb-4">
+        <h4>Battery Health Prediction</h4>
+        <p><b>What I did:</b> Built ML models (Random Forest, LSTM) to predict battery life.</p>
+        <p><b>Key Skills:</b> Python, Machine Learning, Data Analysis</p>
+        <p><b>Impact:</b> Accurate prediction of SoH and RUL.</p>
+    </div>
+
+    <div class="card p-4 mb-4">
+        <h4>EEG Data Acquisition System</h4>
+        <p><b>What I did:</b> Developed embedded EEG acquisition system.</p>
+        <p><b>Key Skills:</b> SPI, UART, Microcontrollers</p>
+        <p><b>Impact:</b> Reliable real-time signal acquisition.</p>
+    </div>
+
+</div>
+
+<div class="section container text-center">
+    <h2>Resume</h2>
+    <a href="Prajwal_Nagaraj_CV.pdf" class="btn btn-custom">Download CV</a>
+</div>
+
+<div class="section container text-center">
+    <h2>Contact</h2>
+    <p><i class="fa fa-envelope"></i> nprajwal333@gmail.com</p>
+    <p><i class="fa fa-phone"></i> +44 7741014720</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/prajwal-nagaraj-4968491a0" target="_blank">LinkedIn</a></p>
+</div>
+
+<footer class="text-center p-3" style="background:#000;">
+    <p>© 2026 Prajwal Nagaraj | Built for FPGA Careers</p>
+</footer>
+
+<script>
+gsap.from("#title", {y:-50, opacity:0, duration:1});
+gsap.from(".card", {opacity:0, y:50, duration:1, stagger:0.2});
+</script>
+
+</body>
+</html>
